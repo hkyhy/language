@@ -25,6 +25,9 @@ jobs:
       - name: Build 🏗️
         run: npm run build
 
+      - name: Get Github token 🏗️
+        run: echo $secrets_GITHUB_TOKEN
+
       - name: Deploy to GH Pages 🚀
         uses: peaceiris/actions-gh-pages@v3
         with:
@@ -37,4 +40,4 @@ jobs:
         run: npm publish --access=public
 
       - name: Sync To Cnpm
-        run: npm i -g cnpm && cnpm sync @hkyhy/language
+        run: npm i -g cnpm && cnpm sync @hkyhy/components-language
