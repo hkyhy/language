@@ -13,3 +13,5 @@ In the project directory, you can run:
 ### 3、 `npm test`
 
 ### 4、 `npm run build`
+
+示例入口：https://hkyhy.github.io/components-language/
